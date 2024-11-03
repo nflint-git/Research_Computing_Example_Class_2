@@ -1,6 +1,6 @@
 import argparse
 import datetime
-from pygbm.gbm import GeometricBrownianMotionSimulation
+from .gbm import GeometricBrownianMotionSimulation
 
 def main():
     # Initialize the argument parser
