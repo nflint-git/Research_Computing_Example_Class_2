@@ -15,7 +15,7 @@ class GeometricBrownianMotion:
     def simulate(self):
         # Generate the random component of the process
         dW = np.random.normal(0, np.sqrt(self.dt), size=(self.M, self.n)).T
-        # Calculate stock price paths
+        # Calculate value paths
         St = np.exp((self.mu - self.sigma ** 2 / 2) * self.dt + self.sigma * dW)
         
         # Start with an array of 1s to represent the initial stock price
