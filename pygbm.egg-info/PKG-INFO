@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pygbm
+Version: 0.1.dev3+g88353d7.d20241103
+Summary: A Python package for simulating geometric Brownian motion.
+Author-email: Nick Flint <nf393@cam.ac.uk>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Research_Computing_Example_Class_2

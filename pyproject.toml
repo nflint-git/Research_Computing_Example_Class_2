@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools", "wheel", "setuptools_scm"]  # Build requirements
+requires = ["setuptools", "wheel", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pygbm" # name of the package must match the core folder name
+name = "pygbm" 
 dynamic = ["version"]
-description = "A Python package for simulating geometric brownian motion."
+description = "A Python package for simulating geometric Brownian motion."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
@@ -13,19 +13,17 @@ authors = [
     { name = "Nick Flint", email = "nf393@cam.ac.uk" },
 ]
 
-# Runtime dependencies
+# Runtime dependencies should be directly under [project]
 dependencies = [
     "numpy",
     "matplotlib",
 ]
 
-
 [project.scripts]
-gbm = "pygbm.cli:main"
-
+pygbm = "pygbm.cli:main"
 
 [tool.setuptools_scm]
 write_to = "pygbm/version.py"  # Where to write the dynamic version
 
 [tool.setuptools.packages.find]
-where = ["pygbm"]
+where = ["."]  # Ensure this points to the 'pygbm' folder

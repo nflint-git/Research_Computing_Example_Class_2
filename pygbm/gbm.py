@@ -53,5 +53,5 @@ class GeometricBrownianMotionSimulation(GeometricBrownianMotion):
 
 
 # Example usage:
-gbm_simulation = GeometricBrownianMotionSimulation(V0=100, mu=0.1, sigma=0.3, T=1, n=100, M=100)
-gbm_simulation.run_simulation_and_plot()
+#gbm_simulation = GeometricBrownianMotionSimulation(V0=100, mu=0.1, sigma=0.3, T=1, n=100, M=100)
+#gbm_simulation.run_simulation_and_plot()
