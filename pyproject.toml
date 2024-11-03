@@ -13,17 +13,19 @@ authors = [
     { name = "Nick Flint", email = "nf393@cam.ac.uk" },
 ]
 
-[project.scripts]
-gbm = "pygbm.cli:main"
-
 # Runtime dependencies
 dependencies = [
     "numpy",
     "matplotlib",
 ]
 
+
+[project.scripts]
+gbm = "pygbm.cli:main"
+
+
 [tool.setuptools_scm]
 write_to = "pygbm/version.py"  # Where to write the dynamic version
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["pygbm"]
